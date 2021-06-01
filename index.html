@@ -1,138 +1,480 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Andrew Balmakund</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+        <link href="style.min.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="lightcase-2.5.0/src/css/lightcase.css">
+        <script type="text/javascript" src="lightcase-2.5.0/src/js/lightcase.js"></script>
 
-<head>
-  <title>Andrew Balmakund</title>
-</head>
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="./assets/img/logo.svg"/>
+                    </div>
+                    <div class="col-10 text-right">
+                        <a href="#masthead">About</a>
+                        <a href="#ProjectWork">Work</a>
+                        <a href="#Contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section id="masthead">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <center>
+                        <img src="./assets/img/undraw_programming_2svr 1.svg"/>
+                        <img src="./assets/img/wave.svg" style="position: absolute; top: 280px; left: 0px">
+                        <div class="sub">
+                        </center>
+                            <div class="Rectangle1">
+                                <div class="FieldName">I'm A Backend Developer </div>
+                                <a href="https://www.linkedin.com/in/andrew-balmakund/">
+                                    <img src="./assets/img/linked-in.svg" style="position: absolute; left: 600px; top: 25px;"/>
+                                </a>
 
-<style>
-    table, th, td {
-          border: 1px solid black;
-                border-collapse: collapse;
-    }
-    th, td {
-          padding: 5px;
-                text-align: left;    
-    }
-    body{
-        background-image: url('');
-    }
-   
-</style>
+                                <a href="https://github.com/AndrewBal802">
+                                    <img src="./assets/img/github.svg" style="position: absolute; left: 650px; top: 25px;"/ />
+                                </a>
+                                
+                                    <p class="AboutMe">I am in my 4th Year Software Engineering Student (Bachelors's Degree) at McMaster University, Hamilton ON. I am an enthusiastic learner, have a strong passion for problem-solving. As a hobby, I enjoy participating in hackathons.</p>
 
-<body>
-  <nav>
-    <!--
-    <a href="./index.html">Brown Bear</a>
-    <a href="./aboutme.html">About Me</a>
-    -->
-  </nav>
-  <h1><center>Andrew Balmakund </center></h1>
-   <img src="graduationPic.png" height = "400" width = "300" align = "right"/>
-  <nav>
-    <ul>
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#projects">Personal Projects</a></li>
-      <li><a href="workExp">Work Experience</a></li>
-      <li><a href="extraCurr">Extracurricular Activities</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <div id="introduction">
-    <h2>About me</h2>
-    <p>I am a second year Software-Engineering (CO-OP) student at McMaster University. Throughout my academic career, I love to learn about new emerging techonologies, work on projects that pushes me to explore and develop new skills. 
-    <br> <br>
-    Some software skills and technologies I'm profficent at:  
-    </p>
-    <!--
-    <ul>
-        <li> C </li>
-        <li> Java </li>
-        <li> C++ </li>
-    </ul>
-    -->
-    <center>
-        <table style = "width:80%"> 
-            <tr>
-                <th>Programming Languages</th>
-                <th>Software Technologies</th>
-            </tr>
-            <tr>
-                <td>
-                <ul>
-                    <li>C</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>MATLAB</li>
-                    <li>C++</li>
-                    <li>HTML</li>
-                    <li>Verilog</li>
-                    <li>Javascript</li>
-                    <li>Bash</li>
+                                    <div class="VerticalLine"></div>
+
+                                    <div class="TopSkill" >Top Skills</div>
+                                    <p class="Skills"> 
+                                        Python <br> 
+                                        API Developement <br>
+                                        Mongo/Mongo DB <br>
+                                        Flask <br>
+                                        Javascript<br>
+                                        Java <br>
+                                        C/C++ <br>
+                                    </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ProjectWork">
+             <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <center>
+                        <h2> Project Work </h2>
+                        </center>
+
+                        <div class="RectangleProject" style="top: 100px"> 
+                        
+                            <div class="ProjectTitleName" style="top: 20px; left: 600px"> VerifiedParking </div>
+                            <div class="ProjectSubTitleName" style="top: 60px; left: 600px"> Unihack Hackathon | November 2020 </div>
+                            <a class="btn outline" style="top: 120px; left: 600px;"> Python </a>
+                            <a class="btn outline" style="top: 120px; left: 750px;"> Flask </a>
+                            <a class="btn outline" style="top: 120px; left: 900px;"> APIs </a>
+
+                            <img src="assets/img/verifiedParking/home.png" style="position: relative; top: 20px; width: 550px; height: 350px">
+
+                            <div class="ProjectDescription" style="top:200px; left: 600px;">
+                               A web application that suggests nearby parking lots given a location. The user enters the target location and the verifiedParking will suggest the closed parking lots. verifiedParking also returns the hourly rate and capacity of each parking lot. The user can also find nearby parking lots using their current location. verifiedParking is an web app that allows user to find parking lots hassle-free. 
+                            </div>
+                            
+                            <a href="#popout-1" class="arrow-btn" style="top:400px; left: 600px;" data-rel="lightcase-inline" onclick="showSlides(1,1)"> Read More <svg width="12" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.92 5.624a1 1 0 00-.21-.33l-5-5a1.004 1.004 0 00-1.42 1.42l3.3 3.29H1a1 1 0 000 2h7.59l-3.3 3.29a1 1 0 00.325 1.639 1 1 0 001.095-.219l5-5a1 1 0 00.21-.33 1 1 0 000-.76z" fill="#4C75F2"/></svg></a>
+                            
+                            <!-- Taken from https://cornel.bopp-art.com/lightcase/#inline1 -->
+                            <div id="lightcase-case" class="popout-box">
+                                <div id="lightcase-content">
+                                    <div class="lightcase-contentInner" style="opacity: 1; width: 1920px; height: 1000px; max-width: 100%; display: block;">
+                                        <div class="lightcase-inlineWrap" data-lc-width=900  class="popout-box" style="width: 1920px; height: 1000px; max-width: 1000px; max-height: 1000px;">
+
+                                            <div id="popout-1"  style="display: block; width:900px; height: 900px">
+	
+                                                <div class="popout-ProjectTitle">verifiedParking </div>
+                                                <div class="popout-Subtitle"> McMaster Engineering Competition (MCE) - First Place </div>
+                                                <div class="popout-Technology" style="top: 50px">Technology</div>
+                                    
+                                                <a class="btn outline" style="position: relative; top: 30px; left: 210px;height: 50px;"> Python </a>
+                                                <a class="btn outline" style="position: relative; top: 30px; left: 260px;height: 50px;"> Flask </a>
+                                                <a class="btn outline" style="position: relative; top: 30px; left: 310px;height: 50px;"> Google Maps API </a>
+
+                                                <a class="btn outline" style="position: relative; top: 30px; left: 360px;height: 50px;"> SQL </a>
+
+                                                
+                                  
+                                  
+                                                
+                                                
+                                                <div class="slideshow">
+       
+                                                    <!-- Full-width images with number and caption text -->
+                                                     <div class="popout_slides-1 mySlides fade" id="mySlides-1">
+                                                        <img src="assets/img/verifiedParking/home.png" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text">Home Menu; access to user and parking lot owner</div>
+                                                      </div>
+                                                      <div class="popout_slides-1 mySlides fade" id="mySlides-1">
+                                                        <img src="assets/img/verifiedParking/findParking.png" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text">User entering current location</div>
+                                                      </div>
+
+                                                      <div class="popout_slides-1 mySlides fade" id="mySlides-1">
+                                                        <img src="assets/img/verifiedParking/availableParking.png" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text">Nearby available parking lots </div>
+                                                      </div>
+
+                                                      <div class="popout_slides-1 mySlides fade" id="mySlides-1">
+                                                        <img src="assets/img/verifiedParking/routeToPark.png" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text">Google Map route API</div>
+                                                      </div>
+
+                                                      <div class="popout_slides-1 mySlides fade" id="mySlides-1">
+                                                        <img src="assets/img/verifiedParking/OwnerLogin.png" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text"> Parking Lot owner login</div>
+                                                      </div>
+
+                                                      <div class="popout_slides-1 mySlides fade" id="mySlides-1">
+                                                        <img src="assets/img/verifiedParking/OwnerPage.png" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text"> Parking Lot owner view; simulating how cars will be entering or leaving (manually) </div>
+                                                      </div>
+
+                                                      
+
+                                                     
+                                                      <!-- Next and previous buttons -->
+                                                      <a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+                                                      <a class="next" onclick="plusSlides(1,1)">&#10095;</a> 
+                                                                                                  
+                                                </div>       
+                                                    <!-- The dots/circles -->
+                                                    <div style="text-align:center; top: 400px;">
+                                                      <span class="popout_dot-1 dot" onclick="currentSlide(1,1)"></span>
+                                                      <span class="popout_dot-1 dot" onclick="currentSlide(2,1)"></span>
+                                                      <span class="popout_dot-1 dot" onclick="currentSlide(3,1)"></span>
+                                                      <span class="popout_dot-1 dot" onclick="currentSlide(4,1)"></span>
+                                                      <span class="popout_dot-1 dot" onclick="currentSlide(5,1)"></span>
+                                                      <span class="popout_dot-1 dot" onclick="currentSlide(6,1)"></span>
+                                                      
+                                                    </div>
+                                                   
+                                                <div class="Heading" style="top: 75px;">Problem</div>
+                                                <div class="Content" style="top: 100px;">
+                                                    Individuals that are new comers to a populated or those that are in a rush to find the closet and available parking to them especially at busy times where parking lots are full. Provide a web app to suggest individuals the nearest and available parking lots. 
+                                                                                                     
+                                                </div>
+                                                
+                                                <div class="Heading" style="top: 90px;">Solution</div>
+                                                <div class="Content" style="top: 110px;">
+                                                     Designed using Python Flask to run as a web serverlet that would allow python to be used as a backend to process the data of all parking lots (as of now in las vegas). verifiedParking also returns the hourly rate and capacity of each parking lot. The user can also find nearby parking lots using their current location.
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               </div>
+                              
+
+                         </div>
 
 
-                </ul>
-                </td>
+                        <div class="RectangleProject" style="top: 600px"> 
+                        
+                            <div class="ProjectTitleName" style="top: 20px; left: 600px"> T-Rex Acceleration </div>
+                            <div class="ProjectSubTitleName" style="top: 60px; left: 600px"> McMaster - Third Year Project</div>
+                            <a class="btn outline" style="top: 120px; left: 600px;"> Python </a>
+                            <a class="btn outline" style="top: 120px; left: 750px;"> PyGame </a>
+                            <a class="btn outline" style="top: 120px; left: 900px;"> Documentation </a>
 
-                <td>
-                    <ul>
-                        <li>Linux/Unix</li>
-                        <li>Git/Github</li>
-                        <li>Microsoft Office</li>
-                        <li>AutoCad</li>
-                        <li>Autodesk Inventor</li>
+                            <img src="assets/img/T-Rex_Acceleration/start_menu.png" style="position: relative; top: 20px; width: 550px; height: 380px">
+
+                            <div class="ProjectDescription" style="top:200px; left: 600px;">
+                                Third year project for software practices and development course to take the original open source code of Chromes version of a T-rex runner game and improve various aspects of the games, such as the graphics, game style, code maintain ability, and more. This project involved intensive planning and documentation as there where strict deadlines for deliverables that are due every week.                          
+                            </div>
+                            
+                            <a href="#popout-2" class="arrow-btn" style="top:400px; left: 600px;" data-rel="lightcase" onclick="showSlides(1,2)"> Read More <svg width="12" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.92 5.624a1 1 0 00-.21-.33l-5-5a1.004 1.004 0 00-1.42 1.42l3.3 3.29H1a1 1 0 000 2h7.59l-3.3 3.29a1 1 0 00.325 1.639 1 1 0 001.095-.219l5-5a1 1 0 00.21-.33 1 1 0 000-.76z" fill="#4C75F2"/></svg></a>
+
+                             <!-- Taken from https://cornel.bopp-art.com/lightcase/#inline1 -->
+                            <div id="lightcase-case" class="popout-box">
+                                <div id="lightcase-content">
+                                    <div class="lightcase-contentInner" style="opacity: 1; width: 1920px; height: 1000px; max-width: 100%; display: block;">
+                                        <div class="lightcase-inlineWrap" data-lc-width=900  class="popout-box" style="width: 1920px; height: 1000px; max-width: 1000px; max-height: 1000px;">
+
+                                            <div id="popout-2"  style="display: block; width:900px; height: 900px">
+	
+                                                <div class="popout-ProjectTitle">T-Rex Acceleration </div>
+                                                <div class="popout-Subtitle"> McMaster - Third Year Project </div>
+                                                <div class="popout-Technology" style="top: 50px">Technology</div>
+
+                                                <a class="btn outline" style="position: relative; top: 30px; left: 175px;height: 50px;"> Python </a>
+                                                <a class="btn outline" style="position: relative; top: 30px; left: 225px;height: 50px;"> PyGame </a>
+                                                <a class="btn outline" style="position: relative; top: 30px; left: 275px;height: 50px;"> Documentation </a>
+                                                <a class="btn outline" style="position: relative; top: 30px; left: 325px;height: 50px;"> Testing </a>
+                                  
+                                            
+                                                <div class="slideshow">
+       
+                                                    <!-- Full-width images with number and caption text -->
+                                   
+                                                     <div class="popout_slides-2 mySlides fade">
+                                                        <img src="assets/img/T-Rex_Acceleration/start_menu.png" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text"> Home Screen; keyboard bindings used to access different menus indicated in brackets</div>
+                                                      </div>
+
+                                                      <div class="popout_slides-2 mySlides fade">
+                                                        <img src="assets/img/T-Rex_Acceleration/instructions_menu.png" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text">How to play menu</div>
+                                                      </div>
+
+                                                      <div class="popout_slides-2 mySlides fade">
+                                                        <img src="assets/img/T-Rex_Acceleration/settings_menu.png" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text"> Setting Menu for controlling sound volumes</div>
+                                                      </div>
+                                                     <div class="popout_slides-2 mySlides fade">
+                                                        <img src="assets/img/T-Rex_Acceleration/gameplay.gif" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text"> Gameplay - gif</div>
+                                                      </div>
+
+                                                      <!-- Next and previous buttons -->
+                                                      <a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
+                                                      <a class="next" onclick="plusSlides(1,2)">&#10095;</a> 
+                                                                                                    
+                                                </div>       
+                                                                                                    <!-- The dots/circles -->
+                                                    <div style="text-align:center; top: 400px;">
+                                                      <span class="popout_dot-2 dot" onclick="currentSlide(1,2)"></span>
+                                                      <span class="popout_dot-2 dot" onclick="currentSlide(2,2)"></span>
+                                                      <span class="popout_dot-2 dot" onclick="currentSlide(3,2)"></span>
+                                                      <span class="popout_dot-2 dot" onclick="currentSlide(4,2)"></span>
+                                                    </div>
+                                                <div class="Heading" style="top: 75px;">Problem</div>
+                                                <div class="Content" style="top: 85px;">
+                                                    Take a open source project that is available for development and enhance the project. The open-source project chosen was the T-Rex Runner game which is a 2D endless runner game where a player controls a dinosaur to jump over or duck under obstacles for as long as they can. The visuals involved in the game
+                                                    are quite basic, it lacks creativity and may not be as appealing to most. Furthermore, the
+                                                    game is written in only one large Javascript file, resulting in poor modularization and poor
+                                                    software maintainability.                 
+                                                </div>
+                                                
+                                                <div class="Heading" style="top: 100px;">Solution</div>
+                                                <div class="Content" style="top: 110px;">
+                                                     Developed the T-Rex runner game with Python using the PyGame Library. Several features of the game were added such as more obstacles, powerups and improved graphics. One major improvement to the originally game was redeveloping the game as a MVC design which increased the code quality and maintain ability. There was also a large focus on testing this system given the nature of an infinite runner game, most of the testing was done manually. However, some specifications from the Software Requirement Specification (SRS) such as performance was done through automated testing.             
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               </div>
 
 
-                    </ul>
-                </td>
-            </tr>
-           
-        </table>
-    </center>
+                            
+                        </div>
 
-    <p> 
-        Some Relevant Courses I have completed are:
+                        
+                        <div class="RectangleProject" style="top: 1100px"> 
+                        
+                            <div class="ProjectTitleName" style="top: 20px; left: 600px"> OverDrive </div>
+                            <div class="ProjectSubTitleName" style="top: 60px; left: 600px"> McMaster - Third Year Project</div>
+                            <a class="btn outline" style="top: 120px; left: 600px;"> C# </a>
+                            <a class="btn outline" style="top: 120px; left: 750px;"> Unity </a>
+                            <a class="btn outline" style="top: 120px; left: 900px;"> Soft. Design </a>
 
-    </p>
-    <!--
-    <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank">Learn More</a>
-    -->
-    <h3>Personal Projects</h3>
-    <ul> <!-- TODO: INCLUDE href to seperate html file-->
-        <li>Hand Gestured Control Robotic Car (<strong>ARDUINO</strong>) </li>
-      <li>Peel Taekwondo Student Report GUI (<strong>JAVA</strong>)</li>
-      <li>Rubix Cube (<strong>PYTHON</strong>)</li>
-      <li>Picture to Text/ASCII (<strong>C</strong>)</li>
-    </ul>
-    <h3>Work Experience</h3>
-    <p>So far, have not accquired any work experience, looking forward to find employment in April 2020 - August 2020.</p>
+                            <img src="assets/img/Overdrive/Home.png" style="position: relative; top: 20px; width: 550px; height: 380px">
 
-    <h3> Extracurricular Activities </h3>
-    <p>
-    <strong><em>McMaster RoboMaster (NOV 2019 - Currently):</em></strong> On this team, I joined as a Control Systems Member working closely with the Computer Vision Team to help improve the current aim detection system with our robots.
-    <br>
-     &emsp; &emsp; - Currently learning OpenCV and Tensor Flow
-    <br>
-     &emsp; &emsp; - Soon will start testing and developing on NVIDIA Jetson as our main driver for our robots
-     <br>
-     <br>
-    <strong><em>Hosted a Computer Sciennce Education (CSE) even for a class in secondary school (DEC 2017):</em></strong> Worked with 2 other group memebers to create an engaging presentation and tutorial/demo for students to try out programming. We gave them in insight to what computer science is, the different ways computer science is applied in our day to day experience. Thought students the vary fundemental basics of programming which was thought through python. 
-    <br>
-     &emsp; &emsp; - For the tutorial, we wanted the students to be able to think logically about how the rock,paper,scissors game and be able to translate that to code, with our guidence along each step.
-    <br>
-     &emsp; &emsp; -  
+                            <div class="ProjectDescription" style="top:200px; left: 600px;">
+                                Third year project for software architecture course to help focus heavily on several software architecture and designs documentation. This project is a infinite runner game with 4 unique game stages and a coin based system where this in-game currency can be used to purchase items from a shop. This project was designed as a Presentation Abstraction Controller (PAC) for easy modification of adding or removing several aspects of the game (i.e stages, cosmetic items).
+                            </div>
+                            
+                            <a href="#popout-3" class="arrow-btn" style="top:400px; left: 600px;" data-rel="lightcase" onclick="showSlides(1,3)"> Read More <svg width="12" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.92 5.624a1 1 0 00-.21-.33l-5-5a1.004 1.004 0 00-1.42 1.42l3.3 3.29H1a1 1 0 000 2h7.59l-3.3 3.29a1 1 0 00.325 1.639 1 1 0 001.095-.219l5-5a1 1 0 00.21-.33 1 1 0 000-.76z" fill="#4C75F2"/></svg></a>
+                             <!-- Taken from https://cornel.bopp-art.com/lightcase/#inline1 -->
+                             <div id="lightcase-case" class="popout-box">
+                                <div id="lightcase-content">
+                                    <div class="lightcase-contentInner" style="opacity: 1; width: 1920px; height: 1000px; max-width: 100%; display: block;">
+                                        <div class="lightcase-inlineWrap" data-lc-width=900  class="popout-box" style="width: 1920px; height: 1000px; max-width: 1000px; max-height: 1000px;">
 
-    </p>
+                                            <div id="popout-3"  style="display: block; width:900px; height: 900px">
+	
+                                                <div class="popout-ProjectTitle">Overdrive </div>
+                                                <div class="popout-Subtitle"> McMaster - Third Year Project </div>
+                                                <div class="popout-Technology" style="top: 50px">Technology</div>
+                                    
+                                                <a class="btn outline" style="position: relative; top: 30px; left: 200px;height: 50px;"> C# </a>
+                                                <a class="btn outline" style="position: relative; top: 30px; left: 250px;height: 50px;"> Unity </a>
+                                                <a class="btn outline" style="position: relative; top: 30px; left: 300px;height: 50px;"> Soft. Design </a>
 
-  </div>
-  
-  <div id="media">
-    <h2>Media</h2>
+                                                <a class="btn outline" style="position: relative; top: 30px; left: 350px;height: 50px;"> Documentation </a>
+
+                                                
+                                                <div class="slideshow">
+       
+                                                    <!-- Full-width images with number and caption text -->
+                                            
+                                                     <div class="popout_slides-3 mySlides fade">
+                                                        <img src="assets/img/Overdrive/Home.png" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text">Home</div>
+                                                      </div>
+                                                      <div class="popout_slides-3 mySlides fade">
+                                                        <img src="assets/img/Overdrive/PlayerProfile.png" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text">Player profile menu - player statistics</div>
+                                                      </div>
+
+                                                      <div class="popout_slides-3 mySlides fade">
+                                                        <img src="assets/img/Overdrive/Help.png" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text"> Help menu</div>
+                                                      </div>
+
+                                                      <div class="popout_slides-3 mySlides fade">
+                                                        <img src="assets/img/Overdrive/ShopMenu.png" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text"> Shop menu - view available characters for purchase </div>
+                                                      </div>
+
+                                                      <div class="popout_slides-3 mySlides fade">
+                                                        <img src="assets/img/Overdrive/Purchase-Preview.png" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text">Preview item - grants option to purchase current item</div>
+                                                      </div>
+
+                                                      <div class="popout_slides-3 mySlides fade">
+                                                        <img src="assets/img/Overdrive/Startgame.png" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text">Start game menu - chose any purchased cosmetic and select a stage</div>
+                                                      </div>
+
+                                                      <div class="popout_slides-3 mySlides fade">
+                                                        <img src="assets/img/Overdrive/Minigame-1.png"" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text">Minigame #1 - regular infinite style; dodge upcoming obstacles</div>
+                                                      </div>
+
+                                                      <div class="popout_slides-3 mySlides fade">
+                                                        <img src="assets/img/Overdrive/Minigame-2.png" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text">Minigame #2 - fit character through walls</div>
+                                                      </div>
+
+                                                      <div class="popout_slides-3 mySlides fade">
+                                                        <img src="assets/img/Overdrive/Minigame-3.png" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text">Minigame #3 - maneuver around several airballons</div>
+                                                      </div>
+
+                                                      <div class="popout_slides-3 mySlides fade">
+                                                        <img src="assets/img/Overdrive/Minigame-4.png" class="project-img" style="left: 225px; width: 500px">
+                                                        <div class="text">Minigame #4 - Aerial view to focus on reactionary skills</div>
+                                                      </div>
+
+                                                      <!-- Next and previous buttons -->
+                                                      <a class="prev" onclick="plusSlides(-1,3)">&#10094;</a>
+                                                      <a class="next" onclick="plusSlides(1,3)">&#10095;</a> 
+                                                                                                    
+                                                </div>       
+                                                                                                    <!-- The dots/circles -->
+                                                    <div style="text-align:center; top: 400px;">
+                                                      <span class="popout_dot-3 dot" onclick="currentSlide(1,3)"></span>
+                                                      <span class="popout_dot-3 dot" onclick="currentSlide(2,3)"></span>
+                                                      <span class="popout_dot-3 dot" onclick="currentSlide(3,3)"></span>
+                                                      <span class="popout_dot-3 dot" onclick="currentSlide(4,3)"></span>
+                                                      <span class="popout_dot-3 dot" onclick="currentSlide(5,3)"></span>
+                                                      <span class="popout_dot-3 dot" onclick="currentSlide(6,3)"></span>
+                                                      <span class="popout_dot-3 dot" onclick="currentSlide(7,3)"></span>
+                                                      <span class="popout_dot-3 dot" onclick="currentSlide(8,3)"></span>
+                                                      <span class="popout_dot-3 dot" onclick="currentSlide(9,3)"></span>
+                                                      <span class="popout_dot-3 dot" onclick="currentSlide(10,3)"></span>
+                                                    </div>
+                                                <div class="Heading" style="top: 75px;">Problem</div>
+                                                <div class="Content" style="top: 100px;">
+                                                    Develop a game that is composed of several mini-parts such that these mini-parts can be interchanged with one another, removed or added and the system must not break.
+                                                                                                     
+                                                </div>
+                                                
+                                                <div class="Heading" style="top: 90px;">Solution</div>
+                                                <div class="Content" style="top: 110px;">
+                                                     Developed a game using a Presentation Abstraction Controller (PAC) architecture where removing or adding mini-parts are done with ease. Each mini-part of the system involves 4 different mini-games to be played. As well this game features in-game currency can be used to purchase items from a shop.
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               </div>
+
+
+                            
+                        </div>
+
+                    <!-- Sample Buttons 
+                    <a href="#" class="btn solid">Test</a>
+                    <a href="#" class="btn outline">Test</a>
+                    <a href="#" class="arrow-btn">Test <svg width="12" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.92 5.624a1 1 0 00-.21-.33l-5-5a1.004 1.004 0 00-1.42 1.42l3.3 3.29H1a1 1 0 000 2h7.59l-3.3 3.29a1 1 0 00.325 1.639 1 1 0 001.095-.219l5-5a1 1 0 00.21-.33 1 1 0 000-.76z" fill="#4C75F2"/></svg></a>
+                    -->
+
+
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <section id="Contact">
+            <div class="container">
+               <div class="row">
+                   <div class="col-12">
+                       <h2 style="top: 50px; left: 350px;"> Connect </h2>
+                                
+                                <a href="https://www.linkedin.com/in/andrew-balmakund/">
+                                    <img src="./assets/img/linked-in.svg" style="position: relative; left: 850px; top: 75px;"/>
+                                </a>
+
+                                <a href="https://github.com/AndrewBal802">
+                                    <img src="./assets/img/github.svg" style="position: relative; left: 900px; top: 75px;"/ />
+                                </a>
+
+                       <form  action="https://formspree.io/f/mdoyggzz"  method="POST">
+                       
+
+                        <!-- your other form fields go here -->
+
+                       
+                       <div class="contact-message" style="top: 130px; left: 340px"> I’m currently looking for co-op positions.</div>
+
+                       <div class="contact-rectangle" style="top: 150px; left: 340px">
+                        <div class="contact-rectangle-name" style="top:10px; left: 30px;">Name</div>
+                        <input type="text" name="name" id="full-name" required="" style="position: relative; top: 10px; left: 30px">
+                       </div>
+                      
+                       <div class="contact-rectangle" style="top: 175px; left:340px">
+                        <div class="contact-rectangle-name" style="top:10px; left: 30px;">E-Mail</div>
+                        <input type="email" name="_replyto" style="position: relative; top: 10px; left: 30px">
+                       </div>
+
+                       <div class="contact-rectangle" style="top: 200px; left:340px; height: 250px">
+                        <div class="contact-rectangle-name" style="top:10px; left: 30px;">Message</div>
+                        <textarea name="message" style="position: relative; top: 10px; left: 30px; height: 200px; width: 600px;"></textarea>
+                       </div>
+
+                       
+                       <button type="submit" class="btn solid" style="position: relative; top: 250px; left: 350px;background: rgba(26, 25, 33, 0.9);">Send</button>
+                    </form>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+            <script type="text/javascript">
+                jQuery(document).ready(function($) {
+                        $('a[data-rel^=lightcase]').lightcase({
+                                                onClose : {
+                            grault: function() {
+                                slideIndex = 1;
+                            }
+                        },
+                                                        });
+                });
+            </script>
+             <script src=slideshow.js></script> 
+        <script id="__bs_script__">
+            //<![CDATA[document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.18.5'><\/script>".replace("HOST", location.hostname));//]]>
+          </script>
+       
+    </body>
     
-    <video src="media.io_20190623_215250000_iOS.mp4" height="240" width="320" controls>Video not supported</video>
-  </div>
-</body>
-
 </html>
-
-
