@@ -1,0 +1,217 @@
+/* ----------------------------------------------------------------------------
+ * Structure
+ * ------------------------------------------------------------------------- */
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* html element 62.5% font-size for REM use i.e. 1rem = 10px*/
+html {
+	height: 100%;
+    min-height: 100%;
+	background: #FFF;
+	scroll-behavior: smooth;
+}
+
+body {
+	font: 400 16px/1.6 'Source Sans Pro', sans-serif;
+	color: $medium-text;
+	margin: 0;
+	height: 100%;
+	min-height: 100%;
+	display: flex;
+    flex-direction: column;
+    @media screen and (max-width:575px){
+        overflow-x: hidden;
+        height:auto;
+    }
+}
+main {
+	flex: 1 0 auto;
+}
+footer {
+    flex-shrink: 0;
+}
+
+
+/* clear */
+.clear:before,
+.clear:after {
+    content: ' ';
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+.clear {
+    *zoom: 1;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    height: auto;
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #444;
+}
+
+a:focus {
+    outline: 0;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+input:focus {
+    outline: 0;
+}
+
+ol, ul {
+
+}
+select{
+    width: 100%;
+}
+h1,h2,h3{
+	color:$dark-text;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight:600;
+}
+h1{
+	font-size:4rem;
+}
+h2{
+	font-size:3rem;
+}
+h3{
+	font-size:2rem;
+}
+/* Helper Classes */
+.text-center{
+	text-align: center;
+}
+.text-right{
+    text-align:right;
+}
+
+nav{
+	position: absolute;
+	width:100%;
+	top:0;
+}
+
+/* Building Blocks */
+.btn {
+	font-size: 0.8rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 0.75rem 2rem;
+	border-radius: 8px;
+	transition: 250ms all ease;
+	border: 1px solid transparent;
+
+	&.solid {
+		background-color: $blue;
+        color: #FFF;
+        &.alt{
+            background-color:$blue;
+        }
+	}
+
+	&.outline {
+		color: $blue;
+		border-color: $blue;
+        &.alt{
+            color: $blue;
+            border-color: $blue;
+            &:hover {
+                background-color: $blue;
+                color: #FFF;
+            }
+        }
+		&:hover {
+			background-color: $blue;
+			color: #FFF;
+		}
+	}
+
+	&.white {
+		background-color: #FFF;
+		color: $blue;
+
+		&:hover {
+			background-color: transparent;
+			color: #FFF;
+			border-color: #FFF;
+		}
+	}
+}
+
+.arrow-btn {
+	font-size: 0.8rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition: 250ms all ease;
+    color:$dark-text;
+	svg, img {
+		height: 13px;
+		width: 12px;
+		fill: $blue;
+		transition: 250ms all ease;
+		margin-left:0.5rem;
+	}
+
+	&:hover {
+		svg {
+			transform: translateX(10px);
+		}
+	}
+
+	&.white {
+		color: #FFF;
+
+		&:hover {
+			color: #DDD;
+
+			svg {
+				fill: $blue;
+			}
+		}
+    }
+}
+.sub {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 0.8rem;
+    font-weight: 600;
+    position: relative;
+    color:$light-text;
+}
+
+section{
+	margin:5rem 0;
+}
