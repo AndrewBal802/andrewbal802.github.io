@@ -183,7 +183,7 @@ input:focus{outline:0}
 select{width:100%}
 h1,h2,h3{color:#1a1921;font-family:'Source Sans Pro',sans-serif;font-weight:600}
 h1{font-size:4rem}
-h2{font-size:3rem}
+h2{text-align:center;font-size:3rem}
 h3{font-size:2rem}
 .text-center{text-align:center}
 .text-right{text-align:right}
@@ -191,11 +191,11 @@ nav{position:absolute;width:100%;top:0}
 .btn{font-size:.8rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:.75rem 2rem;border-radius:8px;-webkit-transition:250ms all ease;transition:250ms all ease;border:1px solid transparent}
 .btn.solid{background-color:#4c75f2;color:#FFF}
 .btn.solid.alt{background-color:#4c75f2}
-.btn.outline{color:#4c75f2;border-color:#4c75f2}
+.btn.outline{color:#4c75f2;border-color:#4c75f2;padding:.50rem 1.5rem}
 .btn.outline.alt{color:#4c75f2;border-color:#4c75f2}
 .btn.outline.alt:hover{background-color:#4c75f2;color:#FFF}
-.btn.outline:hover{background-color:#4c75f2;color:#FFF}
-.btn.white{background-color:#FFF;color:#4c75f2}
+.btn.outline:hover{background-color:none;color:#FFF}
+.btn.white{background-color:transparent;border-color:#FFF;color:#FFF;font-size:.8rem;font-weight:1000;padding:.3rem 1rem}
 .btn.white:hover{background-color:transparent;color:#FFF;border-color:#FFF}
 .arrow-btn{font-size:.8rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-transition:250ms all ease;transition:250ms all ease;color:#1a1921}
 .arrow-btn svg,.arrow-btn img{height:13px;width:12px;fill:#4c75f2;-webkit-transition:250ms all ease;transition:250ms all ease;margin-left:.5rem}
@@ -207,24 +207,28 @@ nav{position:absolute;width:100%;top:0}
 section{margin:5rem 0}
 nav{padding:1rem 0}
 nav a{color:#FFF;margin-left:2rem}
-#masthead{background-color:#1a1921;background:url(assets/img/tech-pattern-masthead.svg),#1a1921;width:1920px;height:1080px;margin:0;color:#FFF;padding:5rem 0}
+#masthead{display:-webkit-box;display:-ms-flexbox;display:flex;background-color:#1a1921;background:url(assets/img/tech-pattern-masthead.svg),#1a1921;width:100%;height:1080px;margin:0;color:#FFF;padding:5rem 0}
 #masthead h1,#masthead p,#masthead a{color:#FFF}
-.Rectangle1{position:absolute;width:1120px;height:350px;left:50px;top:425px;padding:25px;background:rgba(16,15,28,0.9);border:1px solid rgba(76,117,242,0.1);-webkit-box-sizing:border-box;box-sizing:border-box;border-radius:8px}
-.FieldName{width:334px;height:30px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:24px;line-height:30px;letter-spacing:2px;text-transform:uppercase;color:#fff}
-.TopSkill{position:absolute;left:850px;top:25px;width:334px;height:30px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:24px;line-height:30px;letter-spacing:2px;text-transform:uppercase;color:#fff}
-.Skills{position:absolute;width:700px;height:30px;top:100px;left:850px;font-family:Source Sans Pro;font-style:normal;font-weight:bold;font-size:16px;line-height:26px;letter-spacing:2px;text-transform:uppercase;color:#fff}
-.AboutMe{position:absolute;width:700px;height:30px;top:100px;font-family:Source Sans Pro;font-style:normal;font-weight:normal;font-size:16px;line-height:26px;letter-spacing:2px;text-transform:uppercase;color:#fff}
+.Rectangle1{position:relative;width:1100px;height:350px;left:50px;top:-500px;padding:25px;background:rgba(16,15,28,0.9);border:1px solid rgba(76,117,242,0.1);-webkit-box-sizing:border-box;box-sizing:border-box;border-radius:8px}
+.FieldName{position:relative;width:500px;height:30px;top:15px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:24px;line-height:30px;letter-spacing:2px;text-transform:uppercase;color:#fff}
+.TopSkill{position:relative;left:825px;top:-75px;width:334px;height:30px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:24px;line-height:30px;letter-spacing:2px;text-transform:uppercase;color:#fff}
+.Skills{position:relative;width:300px;height:30px;top:-50px;left:825px;font-family:Source Sans Pro;font-style:normal;font-weight:bold;font-size:16px;line-height:26px;letter-spacing:2px;text-transform:uppercase;color:#fff}
+.AboutMe{display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;width:700px;height:30px;top:20px;left:0;font-family:Source Sans Pro;font-style:normal;font-weight:normal;font-size:16px;line-height:26px;letter-spacing:2px;text-transform:uppercase;color:#fff}
 .VerticalLine{border-left:1px solid #4c75f2;height:300px;position:absolute;left:750px;top:25px}
-#ProjectWork{background-color:white;background:white;position:absolute;top:1000px;width:1920px;height:1700px;margin:0;color:#FFF;padding:1rem 0}
-#ProjectWork h1,#ProjectWork p,#ProjectWork a{position:absolute;color:#4c75f2}
-.RectangleProject{position:absolute;width:1120px;height:450px;left:50px;padding:25px;border:1px solid #4c75f2;-webkit-box-sizing:border-box;box-sizing:border-box;border-radius:8px}
-.ProjectTitleName{position:absolute;width:300px;height:30px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:24px;line-height:30px;letter-spacing:3px;text-transform:uppercase;color:#1a1921}
-.ProjectSubTitleName{position:absolute;width:445px;height:18px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:14px;line-height:18px;letter-spacing:3px;text-transform:uppercase;color:#65617d}
-.ProjectDescription{position:absolute;width:500px;height:128px;font-family:Source Sans Pro;font-style:normal;font-weight:normal;font-size:16px;line-height:26px;color:#3f3d56}
-.popout-box{background:#1a1921}
+#ProjectWork{display:-webkit-box;display:-ms-flexbox;display:flex;background-color:white;background:white;position:relative;width:100%;height:900px;margin:0;color:#FFF;padding:1rem 0}
+#ProjectWork h1,#ProjectWork p,#ProjectWork a{position:relative;color:#4c75f2}
+.Laptop .topscreen-lid{position:absolute;width:604.75px;height:410.58px;background:#e2e8f0;border:2px solid #cbd5e0;-webkit-box-sizing:border-box;box-sizing:border-box;border-radius:28px 28px 4px 4px}
+.Laptop .base{position:relative;width:747.05px;height:13.34px;left:194px;bottom:1962.05px;background:-webkit-gradient(linear,left top,right top,from(#b7c2d0),color-stop(2.95%,#cad4db),color-stop(6.25%,#beccde),color-stop(13.36%,#b7c2d0),color-stop(86.6%,#b7c2d0),color-stop(94.19%,#beccde),color-stop(97.13%,#cad4db),color-stop(99.64%,#b7c2d0)),#e2e8f0;background:linear-gradient(90deg,#b7c2d0 0,#cad4db 2.95%,#beccde 6.25%,#b7c2d0 13.36%,#b7c2d0 86.6%,#beccde 94.19%,#cad4db 97.13%,#b7c2d0 99.64%),#e2e8f0;border-radius:2px 2px 0 0}
+.Laptop .bottom{position:relative;width:747.05px;height:8.89px;left:194px;bottom:1953.15px;background:-webkit-gradient(linear,left top,left bottom,from(#d1dbe9),to(#aab5c6)),#e2e8f0;background:linear-gradient(180deg,#d1dbe9 0,#aab5c6 100%),#e2e8f0}
+.Laptop .groove{position:relative;width:123.72px;height:10.38px;left:506.03px;bottom:1965.01px;background:-webkit-gradient(linear,left top,right top,color-stop(9.86%,#cfd9e7),color-stop(35.92%,rgba(207,217,231,0)),color-stop(64.08%,rgba(207,217,231,0)),color-stop(91.93%,#cfd9e7)),#e2e8f0;background:linear-gradient(90deg,#cfd9e7 9.86%,rgba(207,217,231,0) 35.92%,rgba(207,217,231,0) 64.08%,#cfd9e7 91.93%),#e2e8f0}
+.RectangleProject{position:relative;width:1120px;height:450px;left:50px;padding:25px;border:1px solid #4c75f2;-webkit-box-sizing:border-box;box-sizing:border-box;border-radius:8px}
+.ProjectTitleName{position:relative;width:300px;height:30px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:24px;line-height:30px;letter-spacing:3px;text-transform:uppercase;color:#1a1921}
+.ProjectSubTitleName{position:relative;width:445px;height:18px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:14px;line-height:18px;letter-spacing:3px;text-transform:uppercase;color:#65617d}
+.ProjectDescription{position:relative;width:475px;height:128px;font-family:Source Sans Pro;font-style:normal;font-weight:normal;font-size:16px;line-height:26px;color:#3f3d56}
+.popout-box{display:-webkit-box;display:-ms-flexbox;display:flex;background:#1a1921}
 .popout-description{background-color:#fefefe;margin:auto;padding:20px;border:1px solid #888;width:80%}
 .popout-ProjectTitle{width:300px;height:30px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:24px;line-height:30px;letter-spacing:2px;text-transform:uppercase;color:#fff}
-.popout-Subtitle{width:307px;height:18px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:14px;line-height:18px;letter-spacing:2px;text-transform:uppercase;color:#4c75f2}
+.popout-Subtitle{width:500px;height:18px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:14px;line-height:18px;letter-spacing:2px;text-transform:uppercase;color:#4c75f2}
 .popout-Technology{position:relative;width:125px;height:23px;display:block;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:18px;line-height:23px;letter-spacing:2px;text-transform:uppercase;color:#fff}
 .popout-Technology-button{position:relative;left:0;right:0;top:0;bottom:0;border:1px solid #fff;-webkit-box-sizing:border-box;box-sizing:border-box;border-radius:8px}
 .Heading{position:relative;width:89px;height:23px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:18px;line-height:23px;letter-spacing:2px;text-transform:uppercase;color:#fff}
@@ -241,8 +245,8 @@ nav a{color:#FFF;margin-left:2rem}
 .active,.dot:hover{background-color:#4c75f2}
 .fade{-webkit-animation-name:fade;-webkit-animation-duration:1.5s;animation-name:fade;animation-duration:1.5s}
 .project-img{position:relative;width:800px;height:300px;top:75px;left:75px}
-#Contact{background-color:white;background:url(assets/img/contact-pattern.svg),#4c75f2;position:absolute;top:2700px;width:1920px;height:800px;margin:0;color:#FFF;padding:1rem 0}
-#Contact h2,#Contact p,#Contact a{position:absolute;color:white}
+#Contact{display:-webkit-box;display:-ms-flexbox;display:flex;background-color:white;background:url(assets/img/contact-pattern.svg),#4c75f2;background-size:contain;position:relative;top:800px;width:100%;height:1500px;margin:0;color:#FFF;padding:1rem 0}
+#Contact h1,#Contact h2,#Contact p,#Contact a{position:relative;color:white}
 .contact-message{position:relative;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:16px;line-height:20px;letter-spacing:2px;text-transform:uppercase;color:#fff}
 .contact-rectangle{position:relative;width:650px;height:70px;background:rgba(26,25,33,0.9);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-radius:8px}
 .contact-rectangle-name{position:relative;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:14px;line-height:18px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;letter-spacing:2px;text-transform:uppercase;color:#4c75f2}
