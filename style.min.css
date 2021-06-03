@@ -168,7 +168,7 @@ textarea{resize:vertical}
 ::selection{background-color:#b3d4fc;text-shadow:none}
 *,*:after,*:before{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;text-rendering:optimizeLegibility}
 html{height:100%;min-height:100%;background:#FFF;scroll-behavior:smooth}
-body{font:400 16px/1.6 'Source Sans Pro',sans-serif;color:#3f3d56;margin:0;height:100%;min-height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+body{font:400 16px/1.6 'Source Sans Pro',sans-serif;color:#3f3d56;margin:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 main{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto}
 footer{-ms-flex-negative:0;flex-shrink:0}
 .clear:before,.clear:after{content:' ';display:table}
@@ -183,73 +183,83 @@ input:focus{outline:0}
 select{width:100%}
 h1,h2,h3{color:#1a1921;font-family:'Source Sans Pro',sans-serif;font-weight:600}
 h1{font-size:4rem}
-h2{text-align:center;font-size:3rem}
+h2{font-size:3rem}
 h3{font-size:2rem}
 .text-center{text-align:center}
 .text-right{text-align:right}
-nav{position:absolute;width:100%;top:0}
-.btn{font-size:.8rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:.75rem 2rem;border-radius:8px;-webkit-transition:250ms all ease;transition:250ms all ease;border:1px solid transparent}
-.btn.solid{background-color:#4c75f2;color:#FFF}
-.btn.solid.alt{background-color:#4c75f2}
-.btn.outline{color:#4c75f2;border-color:#4c75f2;padding:.50rem 1.5rem}
-.btn.outline.alt{color:#4c75f2;border-color:#4c75f2}
-.btn.outline.alt:hover{background-color:#4c75f2;color:#FFF}
-.btn.outline:hover{background-color:none;color:#FFF}
-.btn.white{background-color:transparent;border-color:#FFF;color:#FFF;font-size:.8rem;font-weight:1000;padding:.3rem 1rem}
-.btn.white:hover{background-color:transparent;color:#FFF;border-color:#FFF}
+nav{position:absolute;width:100%;top:0;z-index:1}
+.btn,#ProjectWork .tags span{font-size:.8rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:.75rem 2rem;border-radius:8px;-webkit-transition:250ms all ease;transition:250ms all ease;border:1px solid transparent;display:inline-block}
+.btn.solid,#ProjectWork .tags span.solid{background-color:#4c75f2;color:#FFF}
+.btn.solid.alt,#ProjectWork .tags span.solid.alt{background-color:#4c75f2}
+.btn.outline,#ProjectWork .tags span{color:#4c75f2;border-color:#4c75f2;padding:.50rem 1.5rem}
+.btn.outline.alt,#ProjectWork .tags span.alt{color:#4c75f2;border-color:#4c75f2}
+.btn.outline.alt:hover,#ProjectWork .tags span.alt:hover{background-color:#4c75f2;color:#FFF}
+.btn.outline:hover,#ProjectWork .tags span:hover{background-color:none;color:#FFF}
+.btn.white,#ProjectWork .tags span.white{background-color:transparent;border-color:#FFF;color:#FFF;font-size:.8rem;font-weight:700;padding:.3rem 1rem}
+.btn.white:hover,#ProjectWork .tags span.white:hover{background-color:transparent;color:#FFF;border-color:#FFF}
 .arrow-btn{font-size:.8rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-transition:250ms all ease;transition:250ms all ease;color:#1a1921}
 .arrow-btn svg,.arrow-btn img{height:13px;width:12px;fill:#4c75f2;-webkit-transition:250ms all ease;transition:250ms all ease;margin-left:.5rem}
 .arrow-btn:hover svg{-webkit-transform:translateX(10px);transform:translateX(10px)}
 .arrow-btn.white{color:#FFF}
 .arrow-btn.white:hover{color:#DDD}
 .arrow-btn.white:hover svg{fill:#4c75f2}
-.sub,nav a{text-transform:uppercase;letter-spacing:2px;font-size:.8rem;font-weight:600;position:relative;color:#65617d}
+.sub,nav a,#ProjectWork .ProjectSubTitleName,.lightcase-contentInner h3.popout-Technology,.popout-Subtitle{text-transform:uppercase;letter-spacing:2px;font-size:.8rem;font-weight:600;position:relative;color:#65617d}
 section{margin:5rem 0}
 nav{padding:1rem 0}
 nav a{color:#FFF;margin-left:2rem}
-#masthead{display:-webkit-box;display:-ms-flexbox;display:flex;background-color:#1a1921;background:url(assets/img/tech-pattern-masthead.svg),#1a1921;width:100%;height:1080px;margin:0;color:#FFF;padding:5rem 0}
+#masthead{background-color:#1a1921;background:url(assets/img/tech-pattern-masthead.svg),#1a1921;width:100%;height:90vh;margin:0;color:#FFF;padding:10rem 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;position:relative}
 #masthead h1,#masthead p,#masthead a{color:#FFF}
-.Rectangle1{position:relative;width:1100px;height:350px;left:50px;top:-500px;padding:25px;background:rgba(16,15,28,0.9);border:1px solid rgba(76,117,242,0.1);-webkit-box-sizing:border-box;box-sizing:border-box;border-radius:8px}
-.FieldName{position:relative;width:500px;height:30px;top:15px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:24px;line-height:30px;letter-spacing:2px;text-transform:uppercase;color:#fff}
-.TopSkill{position:relative;left:825px;top:-75px;width:334px;height:30px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:24px;line-height:30px;letter-spacing:2px;text-transform:uppercase;color:#fff}
-.Skills{position:relative;width:300px;height:30px;top:-50px;left:825px;font-family:Source Sans Pro;font-style:normal;font-weight:bold;font-size:16px;line-height:26px;letter-spacing:2px;text-transform:uppercase;color:#fff}
-.AboutMe{display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;width:700px;height:30px;top:20px;left:0;font-family:Source Sans Pro;font-style:normal;font-weight:normal;font-size:16px;line-height:26px;letter-spacing:2px;text-transform:uppercase;color:#fff}
-.VerticalLine{border-left:1px solid #4c75f2;height:300px;position:absolute;left:750px;top:25px}
-#ProjectWork{display:-webkit-box;display:-ms-flexbox;display:flex;background-color:white;background:white;position:relative;width:100%;height:900px;margin:0;color:#FFF;padding:1rem 0}
-#ProjectWork h1,#ProjectWork p,#ProjectWork a{position:relative;color:#4c75f2}
-.Laptop .topscreen-lid{position:absolute;width:604.75px;height:410.58px;background:#e2e8f0;border:2px solid #cbd5e0;-webkit-box-sizing:border-box;box-sizing:border-box;border-radius:28px 28px 4px 4px}
-.Laptop .base{position:relative;width:747.05px;height:13.34px;left:194px;bottom:1962.05px;background:-webkit-gradient(linear,left top,right top,from(#b7c2d0),color-stop(2.95%,#cad4db),color-stop(6.25%,#beccde),color-stop(13.36%,#b7c2d0),color-stop(86.6%,#b7c2d0),color-stop(94.19%,#beccde),color-stop(97.13%,#cad4db),color-stop(99.64%,#b7c2d0)),#e2e8f0;background:linear-gradient(90deg,#b7c2d0 0,#cad4db 2.95%,#beccde 6.25%,#b7c2d0 13.36%,#b7c2d0 86.6%,#beccde 94.19%,#cad4db 97.13%,#b7c2d0 99.64%),#e2e8f0;border-radius:2px 2px 0 0}
-.Laptop .bottom{position:relative;width:747.05px;height:8.89px;left:194px;bottom:1953.15px;background:-webkit-gradient(linear,left top,left bottom,from(#d1dbe9),to(#aab5c6)),#e2e8f0;background:linear-gradient(180deg,#d1dbe9 0,#aab5c6 100%),#e2e8f0}
-.Laptop .groove{position:relative;width:123.72px;height:10.38px;left:506.03px;bottom:1965.01px;background:-webkit-gradient(linear,left top,right top,color-stop(9.86%,#cfd9e7),color-stop(35.92%,rgba(207,217,231,0)),color-stop(64.08%,rgba(207,217,231,0)),color-stop(91.93%,#cfd9e7)),#e2e8f0;background:linear-gradient(90deg,#cfd9e7 9.86%,rgba(207,217,231,0) 35.92%,rgba(207,217,231,0) 64.08%,#cfd9e7 91.93%),#e2e8f0}
-.RectangleProject{position:relative;width:1120px;height:450px;left:50px;padding:25px;border:1px solid #4c75f2;-webkit-box-sizing:border-box;box-sizing:border-box;border-radius:8px}
-.ProjectTitleName{position:relative;width:300px;height:30px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:24px;line-height:30px;letter-spacing:3px;text-transform:uppercase;color:#1a1921}
-.ProjectSubTitleName{position:relative;width:445px;height:18px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:14px;line-height:18px;letter-spacing:3px;text-transform:uppercase;color:#65617d}
-.ProjectDescription{position:relative;width:475px;height:128px;font-family:Source Sans Pro;font-style:normal;font-weight:normal;font-size:16px;line-height:26px;color:#3f3d56}
-.popout-box{display:-webkit-box;display:-ms-flexbox;display:flex;background:#1a1921}
+#masthead .wave{position:absolute;left:0;right:0}
+#masthead .programmer-boy{margin:0 auto}
+#masthead .icons a{height:28px;width:28px;display:inline-block;margin-left:1rem}
+#masthead .icons a img{width:100%;height:100%;-o-object-fit:contain;object-fit:contain}
+#masthead .content{position:relative;padding:3rem;background:rgba(16,15,28,0.9);border:1px solid rgba(76,117,242,0.1);-webkit-box-sizing:border-box;box-sizing:border-box;border-radius:8px}
+#masthead h1{text-transform:uppercase;font-size:1.5rem;letter-spacing:2px;margin:0 0 1rem;padding:0}
+#masthead .skills{position:relative;padding:0 0 0 3rem}
+#masthead .VerticalLine{border-left:1px solid #4c75f2;height:100%;position:absolute;left:0;top:0}
+#masthead .TopSkill{color:#FFF;text-transform:uppercase;font-size:1.5rem;letter-spacing:2px;margin-bottom:1rem}
+#masthead ul.Skills{font-weight:bold;letter-spacing:2px;text-transform:uppercase;list-style-type:none}
+#masthead ul.Skills li{font-size:.9rem;margin-bottom:.25rem}
+#ProjectWork{background-color:white;background:white;position:relative;width:100%;height:900px;margin:0;color:#FFF;padding:5rem 0}
+#ProjectWork h2{margin-bottom:3rem;color:#4c75f2;text-transform:uppercase;letter-spacing:3px}
+#ProjectWork .RectangleProject{border:1px solid #4c75f2;border-radius:8px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;height:400px}
+#ProjectWork .RectangleProject .image{width:500px;height:100%;background-color:#4c75f2;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+#ProjectWork .RectangleProject .image img{height:80%;width:80%;-o-object-fit:contain;object-fit:contain}
+#ProjectWork .RectangleProject .content{padding:3rem;width:calc(100% - 500px)}
+#ProjectWork .ProjectTitleName{font-weight:600;font-size:24px;line-height:30px;letter-spacing:3px;text-transform:uppercase;color:#1a1921}
+#ProjectWork .ProjectSubTitleName{font-size:14px;margin-bottom:1rem}
+#ProjectWork .tags{margin-bottom:1rem}
+#ProjectWork .tags span:hover{color:#4c75f2}
+#ProjectWork .ProjectDescription{color:#3f3d56;margin-bottom:1rem;max-width:600px}
+#lightcase-case{font-family:'Source Sans Pro',Arial,Helvetica,sans-serif}
+.lightcase-contentInner{display:-webkit-box;display:-ms-flexbox;display:flex;background:#1a1921;padding:2rem;color:#FFF;overflow-x:hidden;overflow-y:scroll}
+.lightcase-contentInner h2{color:#FFF !important;font-weight:600;font-size:24px;line-height:30px;letter-spacing:2px;text-transform:uppercase}
+.lightcase-contentInner .tech{margin-top:1rem}
+.lightcase-contentInner h3.popout-Technology{color:#FFF !important;font-size:1rem}
+.lightcase-contentInner .btn.white,.lightcase-contentInner #ProjectWork .tags span.white,#ProjectWork .tags .lightcase-contentInner span.white{margin-left:.5rem}
 .popout-description{background-color:#fefefe;margin:auto;padding:20px;border:1px solid #888;width:80%}
-.popout-ProjectTitle{width:300px;height:30px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:24px;line-height:30px;letter-spacing:2px;text-transform:uppercase;color:#fff}
-.popout-Subtitle{width:500px;height:18px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:14px;line-height:18px;letter-spacing:2px;text-transform:uppercase;color:#4c75f2}
-.popout-Technology{position:relative;width:125px;height:23px;display:block;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:18px;line-height:23px;letter-spacing:2px;text-transform:uppercase;color:#fff}
-.popout-Technology-button{position:relative;left:0;right:0;top:0;bottom:0;border:1px solid #fff;-webkit-box-sizing:border-box;box-sizing:border-box;border-radius:8px}
-.Heading{position:relative;width:89px;height:23px;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:18px;line-height:23px;letter-spacing:2px;text-transform:uppercase;color:#fff}
-.Content{position:relative;width:950px;height:103px;font-family:Source Sans Pro;font-style:normal;font-weight:normal;font-size:16px;line-height:26px;color:rgba(255,255,255,0.8)}
-*{-webkit-box-sizing:border-box;box-sizing:border-box}
-.slideshow-container{max-width:1000px;position:relative;margin:auto}
-.mySlides{display:none}
-.prev,.next{cursor:pointer;position:absolute;top:50%;width:auto;margin-top:-22px;padding:16px;color:white;font-weight:bold;font-size:18px;-webkit-transition:.6s ease;transition:.6s ease;border-radius:0 3px 3px 0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
-.next{right:0;border-radius:3px 0 0 3px}
-.prev:hover,.next:hover{background-color:rgba(0,0,0,0.8)}
-.text{color:#f2f2f2;font-size:15px;padding:8px 12px;position:relative;top:75px;width:100%;text-align:center}
+.popout-Subtitle{color:#4c75f2}
+h3.Heading{color:#FFF !important;margin-top:2rem}
+p.Content{color:rgba(255,255,255,0.8) !important;font-size:1rem}
+.slideshow{position:relative;margin:2rem auto 0}
+.mySlides{display:none;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.prev,.next{cursor:pointer;position:absolute;top:0;bottom:50%;width:100px;color:white;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.prev svg path,.next svg path{fill:#FFF;-webkit-transition:250ms all ease;transition:250ms all ease}
+.prev:hover svg path,.next:hover svg path{fill:#4c75f2}
+.prev{left:-50px}
+.next{right:-50px}
+.project-img{position:relative;width:calc(100% - 100px);margin:0 auto;height:500px;-o-object-fit:cover;object-fit:cover}
+.text{color:#f2f2f2;font-size:.9rem;padding:1rem;position:relative;width:100%;text-align:center;font-style:italic}
 .numbertext{color:#f2f2f2;font-size:12px;padding:8px 12px;position:absolute;top:0}
-.dot{position:relative;top:75px;cursor:pointer;height:15px;width:15px;margin:0 2px;background-color:#bbb;border-radius:50%;display:inline-block;-webkit-transition:background-color .6s ease;transition:background-color .6s ease}
+.dots{margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.dot{position:relative;cursor:pointer;height:8px;width:8px;margin:0 .2rem;background-color:#bbb;border-radius:50%;display:inline-block;-webkit-transition:background-color .6s ease;transition:background-color .6s ease}
 .active,.dot:hover{background-color:#4c75f2}
 .fade{-webkit-animation-name:fade;-webkit-animation-duration:1.5s;animation-name:fade;animation-duration:1.5s}
-.project-img{position:relative;width:800px;height:300px;top:75px;left:75px}
-#Contact{display:-webkit-box;display:-ms-flexbox;display:flex;background-color:white;background:url(assets/img/contact-pattern.svg),#4c75f2;background-size:contain;position:relative;top:800px;width:100%;height:1500px;margin:0;color:#FFF;padding:1rem 0}
+#Contact{display:-webkit-box;display:-ms-flexbox;display:flex;background-color:white;background:url(assets/img/contact-pattern.svg),#4c75f2;background-size:contain;width:100%;color:#FFF;padding:10rem 0}
 #Contact h1,#Contact h2,#Contact p,#Contact a{position:relative;color:white}
-.contact-message{position:relative;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:16px;line-height:20px;letter-spacing:2px;text-transform:uppercase;color:#fff}
+.contact-message{position:relative;font-weight:600;line-height:20px;letter-spacing:2px;text-transform:uppercase}
 .contact-rectangle{position:relative;width:650px;height:70px;background:rgba(26,25,33,0.9);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-radius:8px}
-.contact-rectangle-name{position:relative;font-family:Source Sans Pro;font-style:normal;font-weight:600;font-size:14px;line-height:18px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;letter-spacing:2px;text-transform:uppercase;color:#4c75f2}
+.contact-rectangle-name{position:relative;font-weight:600;font-size:14px;line-height:18px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;letter-spacing:2px;text-transform:uppercase;color:#4c75f2}
 @media screen{[hidden~="screen"]{display:inherit}
 [hidden~="screen"]:not(:active):not(:focus):not(:target){clip:rect(0 0 0 0) !important;position:absolute !important}
 }@media(min-width:576px){.container{max-width:540px}
@@ -593,6 +603,16 @@ nav a{color:#FFF;margin-left:2rem}
 .align-self-xl-baseline{-ms-flex-item-align:baseline !important;align-self:baseline !important}
 .align-self-xl-stretch{-ms-flex-item-align:stretch !important;align-self:stretch !important}
 }@media(min-width:1400px){.container{max-width:1350px}
+}@media screen and (min-width:1500px){#masthead p{padding-right:5rem}
+}@media screen and (max-width:1199px){#masthead{height:900px}
+#ProjectWork .RectangleProject .image{width:400px}
+#ProjectWork .RectangleProject .content{width:calc(100% - 400px)}
+.project-img{height:400px}
+}@media screen and (max-width:991px){#masthead{padding:5rem 0}
+#masthead .skills{padding:2rem 0 0 0}
+#masthead ul.Skills{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;max-width:450px}
+#masthead ul.Skills li{margin-right:1rem}
+#ProjectWork .RectangleProject{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 }@media screen and (max-width:575px){body{overflow-x:hidden;height:auto}
 }@media print{.d-print-none{display:none !important}
 .d-print-inline{display:inline !important}
