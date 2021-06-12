@@ -207,7 +207,7 @@ nav{position:absolute;width:100%;top:0;z-index:1}
 section{margin:5rem 0}
 nav{padding:1rem 0}
 nav a{color:#FFF;margin-left:2rem}
-#masthead{background-color:#1a1921;background:url(assets/img/tech-pattern-masthead.svg),#1a1921;width:100%;height:90vh;margin:0;color:#FFF;padding:10rem 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;position:relative}
+#masthead{background-color:#1a1921;background:url("assets/img/tech-pattern-masthead.svg"),#1a1921;width:100%;height:90vh;margin:0;color:#FFF;padding:10rem 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;position:relative}
 #masthead h1,#masthead p,#masthead a{color:#FFF}
 #masthead .wave{position:absolute;left:0;right:0}
 #masthead .programmer-boy{margin:0 auto}
@@ -220,9 +220,9 @@ nav a{color:#FFF;margin-left:2rem}
 #masthead .TopSkill{color:#FFF;text-transform:uppercase;font-size:1.5rem;letter-spacing:2px;margin-bottom:1rem}
 #masthead ul.Skills{font-weight:bold;letter-spacing:2px;text-transform:uppercase;list-style-type:none}
 #masthead ul.Skills li{font-size:.9rem;margin-bottom:.25rem}
-#ProjectWork{background-color:white;background:white;position:relative;width:100%;height:900px;margin:0;color:#FFF;padding:5rem 0}
-#ProjectWork h2{margin-bottom:3rem;color:#4c75f2;text-transform:uppercase;letter-spacing:3px}
-#ProjectWork .RectangleProject{border:1px solid #4c75f2;border-radius:8px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;height:400px}
+#ProjectWork{background-color:white;background:white;position:relative;width:100%;height:1600px;margin:0;color:#FFF;padding:5rem 0}
+#ProjectWork h2{margin-bottom:3rem;color:#4c75f2;text-transform:uppercase;letter-spacing:3px;text-align:center}
+#ProjectWork .RectangleProject{border:1px solid #4c75f2;border-radius:8px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;height:400px;margin:0 0 5em}
 #ProjectWork .RectangleProject .image{width:500px;height:100%;background-color:#4c75f2;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 #ProjectWork .RectangleProject .image img{height:80%;width:80%;-o-object-fit:contain;object-fit:contain}
 #ProjectWork .RectangleProject .content{padding:3rem;width:calc(100% - 500px)}
@@ -255,11 +255,15 @@ p.Content{color:rgba(255,255,255,0.8) !important;font-size:1rem}
 .dot{position:relative;cursor:pointer;height:8px;width:8px;margin:0 .2rem;background-color:#bbb;border-radius:50%;display:inline-block;-webkit-transition:background-color .6s ease;transition:background-color .6s ease}
 .active,.dot:hover{background-color:#4c75f2}
 .fade{-webkit-animation-name:fade;-webkit-animation-duration:1.5s;animation-name:fade;animation-duration:1.5s}
-#Contact{display:-webkit-box;display:-ms-flexbox;display:flex;background-color:white;background:url(assets/img/contact-pattern.svg),#4c75f2;background-size:contain;width:100%;color:#FFF;padding:10rem 0}
-#Contact h1,#Contact h2,#Contact p,#Contact a{position:relative;color:white}
-.contact-message{position:relative;font-weight:600;line-height:20px;letter-spacing:2px;text-transform:uppercase}
-.contact-rectangle{position:relative;width:650px;height:70px;background:rgba(26,25,33,0.9);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-radius:8px}
-.contact-rectangle-name{position:relative;font-weight:600;font-size:14px;line-height:18px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;letter-spacing:2px;text-transform:uppercase;color:#4c75f2}
+#Contact{background-color:white;background:url("assets/img/contact-pattern.svg"),#4c75f2;background-size:contain;width:100%;color:#FFF;margin:0;padding:10rem 0;height:100vh;position:relative}
+#Contact .icons a{height:32px;width:32px;display:inline-block;margin:0 0 1.5rem 1rem}
+#Contact .icons a img{width:100%;height:100%;-o-object-fit:contain;object-fit:contain}
+#Contact h1{position:relative;color:white;margin:0}
+#Contact textarea{position:relative;height:200px;width:600px}
+#Contact .contact-rectangle{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:650px;height:80px;background:rgba(26,25,33,0.9);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-radius:8px;margin:0 0 1em;padding:1rem}
+#Contact .contact-rectangle-large{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:650px;height:200px;background:rgba(26,25,33,0.9);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-radius:8px;margin:0 0 1em;padding:1rem}
+#Contact .contact-message{position:relative;font-weight:900;line-height:30px;letter-spacing:2px;text-transform:uppercase}
+#Contact .contact-rectangle-in-name{position:relative;font-weight:600;font-size:14px;line-height:18px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;letter-spacing:2px;text-transform:uppercase;color:#4c75f2;padding:0}
 @media screen{[hidden~="screen"]{display:inherit}
 [hidden~="screen"]:not(:active):not(:focus):not(:target){clip:rect(0 0 0 0) !important;position:absolute !important}
 }@media(min-width:576px){.container{max-width:540px}
@@ -609,11 +613,16 @@ p.Content{color:rgba(255,255,255,0.8) !important;font-size:1rem}
 #ProjectWork .RectangleProject .content{width:calc(100% - 400px)}
 .project-img{height:400px}
 }@media screen and (max-width:991px){#masthead{padding:5rem 0}
-#masthead .skills{padding:2rem 0 0 0}
+#masthead .skills{padding:2rem 0 0}
 #masthead ul.Skills{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;max-width:450px}
 #masthead ul.Skills li{margin-right:1rem}
-#ProjectWork .RectangleProject{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+#ProjectWork{height:2500px}
+#ProjectWork .RectangleProject{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;height:700px}
+#ProjectWork .RectangleProject .content{width:100%}
 }@media screen and (max-width:575px){body{overflow-x:hidden;height:auto}
+}@media screen and (max-width:443px){#ProjectWork .RectangleProject{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;height:750px}
+#ProjectWork .RectangleProject .content{width:100%}
+}@media screen and (max-height:900px){#masthead{height:90vh}
 }@media print{.d-print-none{display:none !important}
 .d-print-inline{display:inline !important}
 .d-print-inline-block{display:inline-block !important}
